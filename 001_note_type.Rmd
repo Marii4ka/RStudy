@@ -1,0 +1,66 @@
+---
+title: "note"
+author: "Mariia Koliada"
+date: "20 02 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+min_age <- 18 #asign value 
+max_age = 99 #asign value 
+min_age #print variable
+max_age #print variable
+
+#TEXT
+text <- "this is character object"
+small_text <- 'joy'
+few_items = c ("USA", "UK")
+text 
+small_text 
+few_items
+
+#NUMBERS
+num1 <- 1  #real
+num2 <- 1L #integer
+num3 = 2:7
+num1
+num2
+num3
+num_vec = c(1L, 3.222, 4L)
+num_vec
+
+num4 = 2:223
+num4
+
+
+colors <- c("red", "red", "blue", "red", "blue")
+colors_factor1 <- factor(colors, levels = c("red", "blue"))
+colors_factor1
+
+colors_factor2 <- as.factor(colors)
+colors_factor2
+
+
