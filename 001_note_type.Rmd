@@ -28,11 +28,13 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+#asign value 
+min_age <- 18 
+max_age = 99
 
-min_age <- 18 #asign value 
-max_age = 99 #asign value 
-min_age #print variable
-max_age #print variable
+#print variable
+min_age 
+max_age 
 
 #TEXT
 text <- "this is character object"
@@ -43,8 +45,10 @@ small_text
 few_items
 
 #NUMBERS
-num1 <- 1  #real
-num2 <- 1L #integer
+#real
+num1 <- 1  
+#integer
+num2 <- 1L 
 num3 = 2:7
 num1
 num2
@@ -63,4 +67,68 @@ colors_factor1
 colors_factor2 <- as.factor(colors)
 colors_factor2
 
+x = 3
+class(x)
+
+3>5
+
+y = c (TRUE, TRUE)
+y
+
+char_vec <- c("medium", "medium", "high", "low", "low")
+char_factor <- as.factor(char_vec)
+char_factor
+
+
+R Graph Gallery
+
+Arithmetic with R
+The (logical) comparison operators known to R are:
+< for less than
+> for greater than
+<= for less than or equal to
+>= for greater than or equal to
+== for equal to each other
+!= not equal to each other
+
+Basic data types in R
+
+Decimal values like 4.5 are called numerics.
+Natural numbers like 4 are called integers. Integers are also numerics.
+Boolean values (TRUE or FALSE) are called logical.
+Text (or string) values are called characters.
+
+#Function
+# Check class of my_numeric
+class(my_numeric)
+
+# Assign days as names of poker_vector
+names(poker_vector) <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+
+# calculates the sum of all elements of a vector. 
+total_poker <- sum(poker_vector)
+
+# Calculate the average of the elements in poker_start
+mean(poker_start)
+
+# Calculate worldwide box office figures
+worldwide_vector <- rowSums(star_wars_matrix)
+
+# add a column or multiple columns to a matrix with the cbind()function, which merges matrices and/or vectors together by column.
+big_matrix <- cbind(matrix1, matrix2, vector1 ...)
+
+# Just like every action has a reaction, every cbind() has an rbind(). (We admit, we are pretty bad with metaphors.)
+
+big_matrix <- rbind(matrix1, matrix2, vector1 ...)
+matrix 
+matrix(1:9, byrow = TRUE, nrow = 3) # creating matrix 
+
+# Name the columns with region
+colnames(star_wars_matrix) <- region
+
+# Name the rows with titles
+row.names(star_wars_matrix) <- titles
+star_wars_matrix <- matrix(box_office, nrow = 3, byrow = TRUE, dimnames = list(c("A New Hope", "The Empire Strikes Back", "Return of the Jedi"), c("US", "non-US")))
+
+matrices multiplication
 
