@@ -1,0 +1,32 @@
+---
+title: "getting data"
+author: "Mariia Koliada"
+date: "10 03 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+install.packages("googlesheets")
+library(googlesheets)
+
+gs_auth(new_user = TRUE)
+# after will get autorization code
+
+gs_ls()
+
+#open some sheet 
+survey_sheet <- gs_title("Nasa")
+
+survey_data <- gs_read(survey_sheet)
+
+my_response <- c("09-26-2018",	"Mariia Koliada",	"m007@gmail.com",	"Lviv",	"Checked In",	1,	1, 3)
+gs_add_row(survey_sheet, input = my_response)
+
+gs_edit_cells(survey_sheet, anchor = "H68", input = 100)
+
+import data directly to google sheet 
+=importData("https://raw.githubusercontent.com/datasets/gdp/master/data/gdp.csv")
+
