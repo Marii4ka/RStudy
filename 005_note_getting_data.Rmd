@@ -30,3 +30,20 @@ gs_edit_cells(survey_sheet, anchor = "H68", input = 100)
 import data directly to google sheet 
 =importData("https://raw.githubusercontent.com/datasets/gdp/master/data/gdp.csv")
 
+## Data from internet
+## Install packages
+install.packages(c("httr", "rvest", "jsonlite"))
+
+## load package
+library(httr)
+library(dplyr)
+ 	
+## Save GitHub username as variable
+username <- 'janeeverydaydoe'
+
+## Save base endpoint as variable
+url_git <- 'https://api.github.com/'
+
+## Construct API request
+api_response <- GET(url = paste0(url_git, 'users/', username, '/repos'))
+

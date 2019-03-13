@@ -9,22 +9,48 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+#two primary packages in R that will help you reshape your data: tidyr and reshape2
+#tidyr
+#Within tidyr, there are two functions to help you reshape your data.
+#gather(): go from wide data to long data
+#spread(): go from long data to wide data
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+tidyr package is installed and loaded into your RStudio session.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r}
+install.packages("tidyr")
+library(tidyr)
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+## use gather() to reshape from wide to long
+```{r}
+gathered <- gather(airquality)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## take a look at first few rows of long data
+head(gathered)
+```{r}
+head(gathered)
+```
+## to rename the column names that gather provides,
+## change key and value to what you want those column names to be
+gathered <- gather(airquality, key="variable", value="value")
+```{r}
+gathered <- gather(airquality, key ="variable", value="value")
+```
+
+
+## take a look at first few rows of long data
+head(gathered)
+
+```{r}
+## in gather(), after key and value, you can specify which variables 
+## you want included in the long format
+## it will leave the other variables as is
+gathered <- gather(airquality, key="variable", value="value", ozone, solar.r, wind, temp)
+
+## take a look at first few rows of long data
+head(gathered)
+```
+
+
