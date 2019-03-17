@@ -47,3 +47,21 @@ url_git <- 'https://api.github.com/'
 ## Construct API request
 api_response <- GET(url = paste0(url_git, 'users/', username, '/repos'))
 
+
+
+## load package
+library(rvest)
+
+## provide URL
+courses <- read_html("https://www.datacamp.com/tracks/data-scientist-with-r")
+
+## Get Courses
+courses %>%
+html_nodes(".dc-u-fx-center , .course-block__title")%>%
+html_text()
+
+write.csv(courses, file = "MDataCampcouse.csv")
+class(courses)
+
+
+
