@@ -60,8 +60,25 @@ courses %>%
 html_nodes(".dc-u-fx-center , .course-block__title")%>%
 html_text()
 
+courses
+
 write.csv(courses, file = "MDataCampcouse.csv")
 class(courses)
+
+## load package
+library(rvest)
+
+## provide URL
+films <- read_html("https://movies.platfor.ma/girl-power")
+
+## Get Courses
+films %>%
+html_nodes(".loaded , .t-container.t-align_center , span")%>%
+html_text()
+
+films
+
+
 
 
 
