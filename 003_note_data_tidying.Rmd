@@ -53,4 +53,16 @@ gathered <- gather(airquality, key="variable", value="value", ozone, solar.r, wi
 head(gathered)
 ```
 
+# View the first 6 rows
+head(iris)
+
+# View the first 15 rows
+head(iris, n = 15)
+
+# View the last 6 rows
+tail(iris)
+
+# View the last 10 rows
+tail(iris, n = 10)
+
 
