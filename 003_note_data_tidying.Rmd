@@ -70,4 +70,11 @@ separate(treatments, year_mo, c("year", "month"))
 # Apply separate() to bmi_cc
 bmi_cc_clean <- separate(bmi_cc, col = Country_ISO, into = c("Country", "ISO"), sep = "/")
 
+# Apply unite() to treatment (sep by default = "_"))
+unite(treatments, year_mo, year, month)
+
+# Apply unite() to bmi_cc_clean
+bmi_cc <- unite(bmi_cc_clean, Country_ISO, Country, ISO, sep = "-")
+
+
 
