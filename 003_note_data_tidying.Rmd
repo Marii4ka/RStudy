@@ -73,7 +73,7 @@ bmi_cc_clean <- separate(bmi_cc, col = Country_ISO, into = c("Country", "ISO"), 
 # Apply unite() to treatment (sep by default = "_"))
 unite(treatments, year_mo, year, month)
 
-# Apply unite() to bmi_cc_clean
+# Apply unite() to bmi_cc_clean (set sep = "-")
 bmi_cc <- unite(bmi_cc_clean, Country_ISO, Country, ISO, sep = "-")
 
 
