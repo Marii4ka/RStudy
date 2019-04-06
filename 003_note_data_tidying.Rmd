@@ -5,10 +5,6 @@ date: "28 02 2019"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 #two primary packages in R that will help you reshape your data: tidyr and reshape2
 #tidyr
 #Within tidyr, there are two functions to help you reshape your data.
