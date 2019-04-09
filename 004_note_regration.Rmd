@@ -15,4 +15,5 @@ plot(jitter(child,4) ~ parent,galton)
 #generate the regression line and store it in the variable regrline.
 regrline <- lm(child ~ parent, galton)
 abline(regrline, lwd=3, col='red')
+
 summary(regrline)
