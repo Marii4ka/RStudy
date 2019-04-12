@@ -78,7 +78,6 @@ bmi_cc <- unite(bmi_cc_clean, Country_ISO, Country, ISO, sep = "-")
 
 
 # Apply unite() 
-
 bmi_cc <- unite(bmi_cc_clean, Country_ISO, Country, ISO, sep = "-")
 
 
