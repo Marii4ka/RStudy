@@ -65,6 +65,7 @@ tail(iris)
 # View the last 10 rows
 tail(iris, n = 10)
 
+# Apply separate() to treatments, sep ="_"
 separate(treatments, year_mo, c("year", "month"))
 
 # Apply separate() to bmi_cc
