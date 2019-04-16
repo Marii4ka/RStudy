@@ -47,8 +47,6 @@ url_git <- 'https://api.github.com/'
 ## Construct API request
 api_response <- GET(url = paste0(url_git, 'users/', username, '/repos'))
 
-
-
 ## load package
 library(rvest)
 
