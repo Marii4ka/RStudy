@@ -1,1 +1,19 @@
 Course at datacamp
+
+Loading data
+
+# Load package
+library(openintro)
+# Load data
+data(iris)
+
+str(iris)
+
+# Select the hot dog with the least calories: lily
+sep_max <- iris[which.min(iris$Sepal.Length), ]
+
+# Select the observation with the most sodium: tom
+sep_min <- iris[which.max(iris$Sepal.Length), ]
+
+sep_max
+sep_min
