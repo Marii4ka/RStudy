@@ -6,7 +6,6 @@ Loading data
 library(openintro)
 # Load data
 data(iris)
-
 str(iris)
 
 # Select the hot dog with the least calories: lily
