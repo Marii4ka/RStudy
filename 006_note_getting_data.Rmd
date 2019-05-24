@@ -9,8 +9,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
-
 install.packages("googlesheets")
 library(googlesheets)
 
@@ -71,7 +69,7 @@ library(rvest)
 ## provide URL
 films <- read_html("https://movies.platfor.ma/girl-power")
 
-## Get Courses
+## Get movies
 films %>%
 html_nodes(".loaded , .t-container.t-align_center , span")%>%
 html_text()
