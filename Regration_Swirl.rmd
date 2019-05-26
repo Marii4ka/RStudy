@@ -140,6 +140,8 @@ Multiple R-squared:  0.2105,	Adjusted R-squared:  0.2096
 F-statistic: 246.8 on 1 and 926 DF,  p-value: < 2.2e-16
 
 
+
+
 | Keep up the great work!
 
   |=================================================                        |  67%
