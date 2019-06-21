@@ -111,8 +111,12 @@ total_poker <- sum(poker_vector)
 # Calculate the average of the elements in poker_start
 mean(poker_start)
 
+
+
 # Calculate worldwide box office figures
 worldwide_vector <- rowSums(star_wars_matrix)
+
+
 
 # add a column or multiple columns to a matrix with the cbind()function, which merges matrices and/or vectors together by column.
 big_matrix <- cbind(matrix1, matrix2, vector1 ...)
