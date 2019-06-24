@@ -73,9 +73,6 @@ films <- read_html("https://movies.platfor.ma/girl-power")
 films %>%
 html_nodes(".loaded , .t-container.t-align_center , span")%>%
 html_text()
-
-
-
 films
 
 
