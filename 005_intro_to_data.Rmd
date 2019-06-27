@@ -14,9 +14,6 @@ sep_max <- iris[which.min(iris$Sepal.Length), ]
 # Select the observation with the most sodium: tom
 sep_min <- iris[which.max(iris$Sepal.Length), ]
 
-
-
-
-
+L
 sep_max
 sep_min
