@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#plot
+#plot child ~ parent
 
 plot(child ~ parent, galton)
 plot(jitter(child,4) ~ parent,galton)
