@@ -22,6 +22,8 @@ survey_sheet <- gs_title("Nasa")
 
 survey_data <- gs_read(survey_sheet)
 
+
+
 my_response <- c("09-26-2018",	"Mariia Koliada",	"m007@gmail.com",	"Lviv",	"Checked In",	1,	1, 3)
 gs_add_row(survey_sheet, input = my_response)
 
